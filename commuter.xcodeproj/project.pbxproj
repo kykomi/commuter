@@ -81,6 +81,7 @@
 		5DF396DA1BC127CC005C0259 = {
 			isa = PBXGroup;
 			children = (
+				5DF397101BC1477B005C0259 /* models */,
 				5DF396E51BC127CC005C0259 /* commuter */,
 				5DF397021BC12B66005C0259 /* widget */,
 				5DF396FF1BC12B66005C0259 /* Frameworks */,
@@ -127,6 +128,13 @@
 				5DF397081BC12B66005C0259 /* Info.plist */,
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		5DF397101BC1477B005C0259 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
