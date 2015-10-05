@@ -17,6 +17,8 @@
 		5DF397041BC12B66005C0259 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397031BC12B66005C0259 /* TodayViewController.swift */; };
 		5DF397071BC12B66005C0259 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF397051BC12B66005C0259 /* MainInterface.storyboard */; };
 		5DF3970B1BC12B66005C0259 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DF396FE1BC12B66005C0259 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DF397121BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; settings = {ASSET_TAGS = (); }; };
+		5DF397131BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,7 @@
 		5DF397031BC12B66005C0259 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		5DF397061BC12B66005C0259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5DF397081BC12B66005C0259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF397111BC14808005C0259 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 		5DF397101BC1477B005C0259 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				5DF397111BC14808005C0259 /* TimeTable.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -239,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF396EB1BC127CC005C0259 /* SecondViewController.swift in Sources */,
+				5DF397121BC14808005C0259 /* TimeTable.swift in Sources */,
 				5DF396E71BC127CC005C0259 /* AppDelegate.swift in Sources */,
 				5DF396E91BC127CC005C0259 /* FirstViewController.swift in Sources */,
 			);
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF397041BC12B66005C0259 /* TodayViewController.swift in Sources */,
+				5DF397131BC14808005C0259 /* TimeTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +442,7 @@
 				5DF396F91BC127CC005C0259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DF3970C1BC12B66005C0259 /* Build configuration list for PBXNativeTarget "widget" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				5DF3970E1BC12B66005C0259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

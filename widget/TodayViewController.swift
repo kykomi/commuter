@@ -10,7 +10,13 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+
+    @IBOutlet var firstLabel : UILabel!
+    @IBOutlet var secondLabel : UILabel!
+    @IBOutlet var thirdLabel : UILabel!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -26,11 +32,26 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
 
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-
+        let _timeTable = self.loadData()
+        _timeTable.load()
+        let downTable = _timeTable.find(NSDate())
+        self.firstLabel.text = formatString(downTable[0])
+        self.secondLabel.text = formatString(downTable[1])
+        self.thirdLabel.text = formatString(downTable[2])
+        
         completionHandler(NCUpdateResult.NewData)
+    }
+    
+    //private methods
+    func loadData() -> TimeTable {
+        let _timeTable = TimeTable()
+        _timeTable.load()
+        return _timeTable
+    }
+    
+    func formatString(target : String) -> String {
+        return target.substringToIndex(target.startIndex.advancedBy(2)) + ":" + target.substringFromIndex(target.startIndex.advancedBy(2))
+        
     }
     
 }

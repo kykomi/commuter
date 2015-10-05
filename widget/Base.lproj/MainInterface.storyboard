@@ -48,6 +48,11 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="80"/>
+                    <connections>
+                        <outlet property="firstLabel" destination="GcN-lo-r42" id="O2h-c5-Na8"/>
+                        <outlet property="secondLabel" destination="k14-9V-HTq" id="COY-oD-3PJ"/>
+                        <outlet property="thirdLabel" destination="VOP-s8-Vug" id="iT6-SR-9fI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
