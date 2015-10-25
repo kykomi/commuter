@@ -19,6 +19,8 @@
 		5DF3970B1BC12B66005C0259 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DF396FE1BC12B66005C0259 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5DF397121BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; settings = {ASSET_TAGS = (); }; };
 		5DF397131BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; settings = {ASSET_TAGS = (); }; };
+		5DF397281BDD0B9C005C0259 /* TimeTableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397271BDD0B9C005C0259 /* TimeTableTest.swift */; settings = {ASSET_TAGS = (); }; };
+		5DF3972A1BDD0C7F005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5DF396FD1BC12B66005C0259;
 			remoteInfo = widget;
+		};
+		5DF397221BDD0B6F005C0259 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF396DB1BC127CC005C0259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF396E21BC127CC005C0259;
+			remoteInfo = commuter;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,6 +69,9 @@
 		5DF397061BC12B66005C0259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5DF397081BC12B66005C0259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DF397111BC14808005C0259 /* TimeTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		5DF3971D1BDD0B6F005C0259 /* commuterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = commuterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF397211BDD0B6F005C0259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF397271BDD0B9C005C0259 /* TimeTableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeTableTest.swift; path = ../TimeTableTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DF3971A1BDD0B6F005C0259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +106,7 @@
 				5DF397101BC1477B005C0259 /* models */,
 				5DF396E51BC127CC005C0259 /* commuter */,
 				5DF397021BC12B66005C0259 /* widget */,
+				5DF3971E1BDD0B6F005C0259 /* commuterTests */,
 				5DF396FF1BC12B66005C0259 /* Frameworks */,
 				5DF396E41BC127CC005C0259 /* Products */,
 			);
@@ -97,6 +117,7 @@
 			children = (
 				5DF396E31BC127CC005C0259 /* commuter.app */,
 				5DF396FE1BC12B66005C0259 /* widget.appex */,
+				5DF3971D1BDD0B6F005C0259 /* commuterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +162,15 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		5DF3971E1BDD0B6F005C0259 /* commuterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF397271BDD0B9C005C0259 /* TimeTableTest.swift */,
+				5DF397211BDD0B6F005C0259 /* Info.plist */,
+			);
+			path = commuterTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +210,24 @@
 			productReference = 5DF396FE1BC12B66005C0259 /* widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		5DF3971C1BDD0B6F005C0259 /* commuterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF397241BDD0B6F005C0259 /* Build configuration list for PBXNativeTarget "commuterTests" */;
+			buildPhases = (
+				5DF397191BDD0B6F005C0259 /* Sources */,
+				5DF3971A1BDD0B6F005C0259 /* Frameworks */,
+				5DF3971B1BDD0B6F005C0259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF397231BDD0B6F005C0259 /* PBXTargetDependency */,
+			);
+			name = commuterTests;
+			productName = commuterTests;
+			productReference = 5DF3971D1BDD0B6F005C0259 /* commuterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +242,10 @@
 					};
 					5DF396FD1BC12B66005C0259 = {
 						CreatedOnToolsVersion = 7.0.1;
+					};
+					5DF3971C1BDD0B6F005C0259 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 5DF396E21BC127CC005C0259;
 					};
 				};
 			};
@@ -212,6 +264,7 @@
 			targets = (
 				5DF396E21BC127CC005C0259 /* commuter */,
 				5DF396FD1BC12B66005C0259 /* widget */,
+				5DF3971C1BDD0B6F005C0259 /* commuterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF397071BC12B66005C0259 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF3971B1BDD0B6F005C0259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +318,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DF397191BDD0B6F005C0259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF3972A1BDD0C7F005C0259 /* TimeTable.swift in Sources */,
+				5DF397281BDD0B9C005C0259 /* TimeTableTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +334,11 @@
 			isa = PBXTargetDependency;
 			target = 5DF396FD1BC12B66005C0259 /* widget */;
 			targetProxy = 5DF397091BC12B66005C0259 /* PBXContainerItemProxy */;
+		};
+		5DF397231BDD0B6F005C0259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF396E21BC127CC005C0259 /* commuter */;
+			targetProxy = 5DF397221BDD0B6F005C0259 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -423,6 +497,30 @@
 			};
 			name = Release;
 		};
+		5DF397251BDD0B6F005C0259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = commuterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fc2.blog75.bokunohi.commuterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/commuter.app/commuter";
+			};
+			name = Debug;
+		};
+		5DF397261BDD0B6F005C0259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = commuterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fc2.blog75.bokunohi.commuterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/commuter.app/commuter";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -452,6 +550,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DF397241BDD0B6F005C0259 /* Build configuration list for PBXNativeTarget "commuterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF397251BDD0B6F005C0259 /* Debug */,
+				5DF397261BDD0B6F005C0259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

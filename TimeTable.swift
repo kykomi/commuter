@@ -39,7 +39,7 @@ class TimeTable{
                 break
             }
         }
-        while(result.count <= 3)
+        while(result.count < 3)
         {
             result.append("----")
         }
