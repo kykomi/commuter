@@ -9,7 +9,7 @@
 import Foundation
 
 class TimeTable{
-    
+    // test comment for CI
     private var downTrains : [String]
     
     init(){
