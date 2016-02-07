@@ -39,3 +39,6 @@ xcuserdata
 # Carthage/Checkouts
 
 Carthage/Build
+
+count.csv
+lint_result.txt
