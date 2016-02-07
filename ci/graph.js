@@ -1,25 +1,24 @@
 window.onload = function() {
     var ctx = document.getElementById("myChart").getContext("2d");
     var ciResult = ci.csvToGraphSource("count.csv");
-    console.log(ciResult);
     var data = {
         labels: ciResult.labels,
         datasets: [
             {
-                label: "My First dataset",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
+                label: "Errors",
+                fillColor: "rgba(240,20,20,0.2)",
+                strokeColor: "rgba(240,20,20,1)",
+                pointColor: "rgba(255,3,3,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
                 data: ciResult.errorData
             },
             {
-                label: "My Second dataset",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
+                label: "Warnings",
+                fillColor: "rgba(250,210,20,0.2)",
+                strokeColor: "rgba(250,210,20,1)",
+                pointColor: "rgba(255,180,5,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(151,187,205,1)",
@@ -27,7 +26,9 @@ window.onload = function() {
             }
         ]
     };
-    var myChart = new Chart(ctx).Line(data, {});
+    var myChart = new Chart(ctx).Line(data, ci.graphOptions());
+    $('#commuter_error').text(ciResult.latestErrorCount);
+    $('#commuter_warning').text(ciResult.latestWarningCount);
 }
 
 var ci = ci || {};
@@ -62,6 +63,14 @@ ci.csvToGraphSource = function(path) {
         label: path,
         labels: labels,
         errorData: errorData,
-        warningData: warningData        
+        warningData: warningData,
+        latestErrorCount: errorData[errorData.length - 1],
+        latestWarningCount: warningData[warningData.length - 1]
     } 
-}  
+}
+
+ci.graphOptions = function() {
+    return {
+        responsive : true,
+    }
+}
