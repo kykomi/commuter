@@ -9,7 +9,6 @@
 import XCTest
 
 class TimeTableTest: XCTestCase {
-    
     var t : TimeTable?
     override func setUp() {
         super.setUp()

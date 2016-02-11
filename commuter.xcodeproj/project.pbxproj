@@ -13,13 +13,13 @@
 		5DF396EE1BC127CC005C0259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF396EC1BC127CC005C0259 /* Main.storyboard */; };
 		5DF396F01BC127CC005C0259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF396EF1BC127CC005C0259 /* Assets.xcassets */; };
 		5DF396F31BC127CC005C0259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF396F11BC127CC005C0259 /* LaunchScreen.storyboard */; };
-		5DF397011BC12B66005C0259 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF397001BC12B66005C0259 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		5DF397011BC12B66005C0259 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF397001BC12B66005C0259 /* NotificationCenter.framework */; };
 		5DF397041BC12B66005C0259 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397031BC12B66005C0259 /* TodayViewController.swift */; };
 		5DF397071BC12B66005C0259 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF397051BC12B66005C0259 /* MainInterface.storyboard */; };
 		5DF3970B1BC12B66005C0259 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DF396FE1BC12B66005C0259 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5DF397121BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; settings = {ASSET_TAGS = (); }; };
-		5DF397131BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; settings = {ASSET_TAGS = (); }; };
-		5DF397281BDD0B9C005C0259 /* TimeTableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397271BDD0B9C005C0259 /* TimeTableTest.swift */; settings = {ASSET_TAGS = (); }; };
+		5DF397121BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; };
+		5DF397131BC14808005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; };
+		5DF397281BDD0B9C005C0259 /* TimeTableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397271BDD0B9C005C0259 /* TimeTableTest.swift */; };
 		5DF3972A1BDD0C7F005C0259 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF397111BC14808005C0259 /* TimeTable.swift */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +182,7 @@
 				5DF396E01BC127CC005C0259 /* Frameworks */,
 				5DF396E11BC127CC005C0259 /* Resources */,
 				5DF3970F1BC12B66005C0259 /* Embed App Extensions */,
+				5DC5D8301C66DAA000BCD53A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -296,6 +297,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DC5D8301C66DAA000BCD53A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5DF396DF1BC127CC005C0259 /* Sources */ = {
@@ -558,6 +575,7 @@
 				5DF397261BDD0B6F005C0259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

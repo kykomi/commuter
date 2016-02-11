@@ -15,20 +15,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet var secondLabel : UILabel!
     @IBOutlet var thirdLabel : UILabel!
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         let size : CGSize = CGSizeMake(1, 120)
         self.preferredContentSize = size
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
 
@@ -38,20 +36,19 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         self.firstLabel.text = formatString(downTable[0])
         self.secondLabel.text = formatString(downTable[1])
         self.thirdLabel.text = formatString(downTable[2])
-        
         completionHandler(NCUpdateResult.NewData)
     }
-    
+
     //private methods
     func loadData() -> TimeTable {
         let _timeTable = TimeTable()
         _timeTable.load()
         return _timeTable
     }
-    
+
     func formatString(target : String) -> String {
         return target.substringToIndex(target.startIndex.advancedBy(2)) + ":" + target.substringFromIndex(target.startIndex.advancedBy(2))
         
     }
-    
+
 }

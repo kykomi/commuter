@@ -11,15 +11,15 @@ import Foundation
 class TimeTable{
     // test comment for CI
     private var downTrains : [String]
-    
+
     init(){
         self.downTrains = [String]()
     }
-    
+
     func load(){
         self.downTrains = self.loadDownTrains()
     }
-    
+
     func find(baseDate : NSDate) -> [String]{
         var result = [String]()
 
