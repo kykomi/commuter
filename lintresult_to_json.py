@@ -27,8 +27,12 @@ def execute():
         tmp['line_number'] = line_number
         tmp['error_type'] = error_type
         tmp['error_content'] = error_content
-        dict[file_path] = tmp
-        
+        if file_path in dict:
+            existing = dict[file_path]
+            existing.append(tmp)
+            dict[file_path] = existing
+        else:
+            dict[file_path] = [tmp]
     in_file.close()
     print dict
     out_file = open("lintsummary.json", "w")
