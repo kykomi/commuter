@@ -41,3 +41,4 @@ xcuserdata
 Carthage/Build
 
 lint_result.txt
+.DS_Store

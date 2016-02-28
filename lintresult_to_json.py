@@ -12,11 +12,27 @@ import sys
 def execute():
     file_name = sys.argv[1]
     in_file = open(file_name, "r")
-    out_file = open("lintsummary.json", "w")
-    dit = {}
+    dict = {}
     for l in in_file:
         items = l.split(":")
+        if len(items) < 4:
+        	continue
+        file_path = items[0]
+        line_number = items[1]
+        error_type = items[2]
+        error_content = items[3]
+        
+        # TODO:
+        tmp = {}
+        tmp['line_number'] = line_number
+        tmp['error_type'] = error_type
+        tmp['error_content'] = error_content
+        dict[file_path] = tmp
+        
     in_file.close()
+    print dict
+    out_file = open("lintsummary.json", "w")
+#    out_file.write(json.dump(dict))
     out_file.close()
 
 if __name__ == "__main__":
