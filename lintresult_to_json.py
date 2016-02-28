@@ -1,5 +1,6 @@
 #encoding: utf-8
 import sys
+import json
 
 # give swiftlint result file name into command line first parameter  
 # format lint result into json
@@ -22,7 +23,6 @@ def execute():
         error_type = items[2]
         error_content = items[3]
         
-        # TODO:
         tmp = {}
         tmp['line_number'] = line_number
         tmp['error_type'] = error_type
@@ -34,9 +34,8 @@ def execute():
         else:
             dict[file_path] = [tmp]
     in_file.close()
-    print dict
     out_file = open("lintsummary.json", "w")
-#    out_file.write(json.dump(dict))
+    json.dump(dict, out_file, sort_keys=True, indent = 2)
     out_file.close()
 
 if __name__ == "__main__":
