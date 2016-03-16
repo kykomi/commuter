@@ -1,0 +1,181 @@
+[
+  {
+    "/Users/komiyamatsukasa/Desktop/commuter/commuter/AppDelegate.swift": [
+      {
+        "error_content": " Length Violation (Low Severity)", 
+        "error_type": " warning", 
+        "line_number": "17"
+      }, 
+      {
+        "error_content": " Length Violation (Very High Severity)", 
+        "error_type": " error", 
+        "line_number": "23"
+      }, 
+      {
+        "error_content": " Length Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "24"
+      }, 
+      {
+        "error_content": " Length Violation (High Severity)", 
+        "error_type": " error", 
+        "line_number": "28"
+      }, 
+      {
+        "error_content": " Length Violation (Low Severity)", 
+        "error_type": " warning", 
+        "line_number": "29"
+      }, 
+      {
+        "error_content": " Length Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "33"
+      }, 
+      {
+        "error_content": " Length Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "37"
+      }, 
+      {
+        "error_content": " Length Violation (Low Severity)", 
+        "error_type": " warning", 
+        "line_number": "41"
+      }, 
+      {
+        "error_content": " Trailing Newline Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "47"
+      }
+    ]
+  }, 
+  {
+    "/Users/komiyamatsukasa/Desktop/commuter/commuter/FirstViewController.swift": [
+      {
+        "error_content": " Trailing Newline Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "26"
+      }
+    ]
+  }, 
+  {
+    "/Users/komiyamatsukasa/Desktop/commuter/TimeTableTest.swift": [
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "18"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "22"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "31"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "37"
+      }, 
+      {
+        "error_content": " warning", 
+        "error_type": "5", 
+        "line_number": "12"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "18"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "22"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "31"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "37"
+      }, 
+      {
+        "error_content": " warning", 
+        "error_type": "5", 
+        "line_number": "12"
+      }
+    ]
+  }, 
+  {
+    "/Users/komiyamatsukasa/Desktop/commuter/commuter/SecondViewController.swift": [
+      {
+        "error_content": " Trailing Newline Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "26"
+      }
+    ]
+  }, 
+  {
+    "/Users/komiyamatsukasa/Desktop/commuter/widget/TodayViewController.swift": [
+      {
+        "error_content": " Length Violation (Low Severity)", 
+        "error_type": " warning", 
+        "line_number": "50"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "51"
+      }
+    ]
+  }, 
+  {
+    "/Users/komiyamatsukasa/Desktop/commuter/TimeTable.swift": [
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "31"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "36"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "48"
+      }, 
+      {
+        "error_content": " warning", 
+        "error_type": "22", 
+        "line_number": "32"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "31"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "36"
+      }, 
+      {
+        "error_content": " Trailing Whitespace Violation (Medium Severity)", 
+        "error_type": " warning", 
+        "line_number": "48"
+      }, 
+      {
+        "error_content": " warning", 
+        "error_type": "22", 
+        "line_number": "32"
+      }
+    ]
+  }
+]

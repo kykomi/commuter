@@ -1,14 +1,17 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Swift Lint: Error and Warning</title>
         <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-        <script src="./graph.js"></script>    
+        <script src="./graph.js"></script>
+        <script src="./detail.js"></script>
     </head>
     <body>
         <div class="lint_summary">
             <h1>Commuter</h1>
+            <h2>推移グラフ</h2>
             <canvas id="myChart" width="800" height="200"></canvas>
             <div class="summary">
                 <dl>
@@ -18,6 +21,15 @@
                         <dd id="commuter_warning">5</dd>
                 </dl>
             </div>
+            <h2>詳細</h2>
+            <div id="detail" class="detail">
+                <ul>
+                    <li>file name</li>
+                        <ul>
+                            <li>[type]content:linexx</li>
+                        </ul>
+                </ul>
+            </div>                        
         <div>
     </body>
 </html>

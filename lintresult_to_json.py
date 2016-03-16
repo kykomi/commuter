@@ -34,8 +34,12 @@ def execute():
         else:
             dict[file_path] = [tmp]
     in_file.close()
+    list = []
+    for k in dict.keys():
+        list.append({k:dict[k]})
     out_file = open("lintsummary.json", "w")
-    json.dump(dict, out_file, sort_keys=True, indent = 2)
+    print len(list)
+    json.dump(list, out_file, sort_keys=True, indent = 2)
     out_file.close()
 
 if __name__ == "__main__":
